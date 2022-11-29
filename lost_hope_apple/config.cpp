@@ -17,9 +17,9 @@ class cfgPatches
 
 class CfgWeapons
 {
-	class ItemCore;
-	class InventoryItem_Base_F;
-	class lost_hope_static_item_apple: ItemCore
+	class CBA_MiscItem;
+	class CBA_MiscItem_ItemInfo;
+	class lost_hope_static_item_apple: CBA_MiscItem
 	{
 		displayName = "Apple";
 		scope=2;
@@ -28,9 +28,11 @@ class CfgWeapons
 		model = "\lost_hope_apple\lost_hope_apple.p3d";
 		icon = "iconObject_circle";
 		descriptionShort = "Nom Nom Nom";
-		class ItemInfo: InventoryItem_Base_F
+		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
 			mass = 3;
+			scope = 0;
+			type = 302;
 		};
 	};
 };

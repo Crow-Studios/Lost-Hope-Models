@@ -17,9 +17,9 @@ class cfgPatches
 
 class CfgWeapons
 {
-	class ItemCore;
-	class InventoryItem_Base_F;
-	class lost_hope_static_item_bottle: ItemCore
+	class CBA_MiscItem;
+	class CBA_MiscItem_ItemInfo;
+	class lost_hope_static_item_bottle: CBA_MiscItem
 	{
 		displayName = "Water Bottle";
 		scope=2;
@@ -28,9 +28,11 @@ class CfgWeapons
 		model = "\lost_hope_bottle\lost_hope_bottle.p3d";
 		icon = "iconObject_circle";
 		descriptionShort = "Watah' Bot'le";
-		class ItemInfo: InventoryItem_Base_F
+		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
 			mass = 4;
+			scope = 0;
+			type = 302;
 		};
 	};
 };

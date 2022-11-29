@@ -15,11 +15,12 @@ class cfgPatches
 	};
 };
 
+/*
 class CfgWeapons
 {
-	class ItemCore;
-	class InventoryItem_Base_F;
-	class lost_hope_static_item_flare_2: ItemCore
+	class CBA_MiscItem;
+	class CBA_MiscItem_ItemInfo;
+	class lost_hope_static_item_flare_2: CBA_MiscItem
 	{
 		displayName = "Airdrop Flare";
 		scope=2;
@@ -28,12 +29,15 @@ class CfgWeapons
 		model = "\lost_hope_flare_2\lost_hope_flare_2.p3d";
 		icon = "iconObject_circle";
 		descriptionShort = "Airdrop Signal Flare (Blue)";
-		class ItemInfo: InventoryItem_Base_F
+		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
 			mass = 30;
+			scope = 0;
+			type = 302;
 		};
 	};
 };
+*/ // No need, already have a grenade vers. ingame
 
 class CfgVehicles 
 {
